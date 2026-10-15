@@ -1,0 +1,5 @@
+export enum StaffType {
+  DOCTOR = 'DOCTOR',
+  RECEPTIONIST = 'RECEPTIONIST',
+  HOSPITAL_ADMIN = 'HOSPITAL_ADMIN',
+}
