@@ -1,4 +1,3 @@
-// common/guards/actor.guard.ts
 import {
   CanActivate,
   ExecutionContext,

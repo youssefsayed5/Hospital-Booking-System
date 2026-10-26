@@ -16,6 +16,9 @@ import { MongoConnectionModule } from './database/connctionMongo.js';
 import { RedisConnectionModule } from './database/connectionRedis.js';
 import { EmailModule } from './common/email/email.module.js';
 import { TokenModule } from './common/services/token.module.js';
+import { ScheduleModule } from './module/schedule/schedule.module.js';
+import { PaymentModule } from './module/payment/payment.module.js';
+import { AdminModule } from './module/admin/admin.module.js';
 
 const nodeEnv = process.env.NODE_ENV || 'dev';
 
@@ -45,6 +48,9 @@ const envFilePath = path.resolve(
     HospitalModule,
     DepartmentModule,
     AppointmentModule,
+    ScheduleModule,
+    PaymentModule,
+    AdminModule,
   ],
   controllers: [AppController],
   providers: [AppService],

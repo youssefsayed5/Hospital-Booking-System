@@ -62,6 +62,7 @@ const schema = z.object({
   CLOUDINARY_CLOUD_NAME: z.string().min(1),
   CLOUDINARY_API_KEY: z.string().min(1),
   CLOUDINARY_API_SECRET: z.string().min(1),
+  PAYMENT_WEBHOOK_SECRET: z.string().min(1),
 });
 
 const parsed = schema.safeParse(process.env);
@@ -117,4 +118,5 @@ export const env = {
   cloudinaryCloudName: e.CLOUDINARY_CLOUD_NAME,
   cloudinaryApiKey: e.CLOUDINARY_API_KEY,
   cloudinaryApiSecret: e.CLOUDINARY_API_SECRET,
+  paymentWebhookSecret: e.PAYMENT_WEBHOOK_SECRET,
 } as const;
